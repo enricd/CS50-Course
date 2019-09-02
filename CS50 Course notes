@@ -1,0 +1,74 @@
+------------------
+
+CS50 (yt) COURSE
+
+------------------
+
+
+---- 1. GIT ----
+
+1.1 GITHUB
+
+- Create a Repository
+	
+	Create from the + button on the top right
+
+
+- git clone
+
+	git clone <url> , downloads the repository from the url to your computer into the current directory.
+
+	- push hello.html --> to create a .html file in the repository
+
+
+- git add
+
+	git add <filename> takes some files and tell git that we want to upload those files the next time we make a commit
+
+	- git add hello.html
+
+
+- git commit
+
+	git commit -m "message" --> take a snapshot of the current state of the repo and prepare them to be uploaded. The message has to describe new changes on the code.
+
+	- git co mmit -m "Added hello.html"
+
+
+- git status
+
+	tells you the current status of your repository, if there are files to add or commit to the cloud repo.
+
+
+- git push
+
+	It pushes all changes made on the local repository to the remote server.
+
+	- git push --> + username and password
+
+
+- git pull
+
+	Downloads the latest version of the remote repo.
+
+	- Change the hello.html file code frome the github webpage and commit, then do git pull locally from the terminal.
+
+
+- Merge Conflicts
+
+	Writes in the file where the lines of code are in conflict, first the part from your local repo and then, after the ==== line, the part from the remote repo. You have to delete the undesired parts and leave the wanted ones and git commit.	
+
+
+- git log
+
+	shows a list with history of all commits made by you
+
+
+- git reset
+
+	git reset --hard <commit>
+	git reset --hard origin/master
+
+	
+	
+	
