@@ -69,6 +69,88 @@ CS50 (yt) COURSE
 	git reset --hard <commit>
 	git reset --hard origin/master
 
+
+
+
+---- 2. HTML ----
+
+- <html> </html>
+
+	an html file has 2 parts: head and body
+
+
+- <head>
+
+	head data is metadata for the browser and won't be displayed
+
+	- <title>My Web Page!</title>
+
+
+- <body>
+
+	body data will be displayed
+
+
+- lists
+
+	- <ul> : Unordered Lists
+
+	- <ol> : Ordered Lists
+		
+		- <il> : List item (for both types of lists)
+
+
+- firefox hello.html / google-chrome hello.html 
+		
+	for display webpage on the browser
+
+
+- images
+
+	inside <body>
+
+	- <img src="cat.jpg"> --> the src="cat.jpg" is an attribute of the tag 
+
+	- size : <img src="cat.jpg" height="200" width="300"> , if just one of both is given, the other dimension will be proportionally adjusted.
+
+		- also works with percentages --> height=50% , responsive image
+
+
+- <table>
+
+	- <tr> : Table Row
+
+		- <th> : Table Header
+
+		- <td> : Table Data
+
+
+- <form>
+
+	take inputs from the user
+
+	- <input type="text" placeholder="Full Name" name="name">
+
+	- <button>Submit!</button>
+
+
+- <p> 
 	
-	
-	
+	paragraphs
+
+
+
+
+---- 3. CSS ----
+
+- style
+
+	<h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
+
+	- properties:
+
+		- color --> there are 140 name colors (like red, blue, darkmagenta...) but also RGB hexcodes (like #093c4f)
+
+		- text-align
+
+
