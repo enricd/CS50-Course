@@ -32,7 +32,7 @@ CS50 (yt) COURSE
 
 	git commit -m "message" --> take a snapshot of the current state of the repo and prepare them to be uploaded. The message has to describe new changes on the code.
 
-	- git co mmit -m "Added hello.html"
+	- git commit -m "Added hello.html"
 
 
 - git status
