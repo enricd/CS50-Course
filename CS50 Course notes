@@ -145,12 +145,42 @@ CS50 (yt) COURSE
 
 - style
 
-	<h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
-
 	- properties:
 
 		- color --> there are 140 name colors (like red, blue, darkmagenta...) but also RGB hexcodes (like #093c4f)
 
 		- text-align
+
+	- <body>
+		<h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
+	  </body>
+
+	- <head>
+		<style>
+			h1 {
+				color: blue;
+				text-align: center;
+			}
+		</style>
+	  </head>
+
+
+	- html and css in separated files:
+		- html file:
+			  <head>
+				<link rel="stylesheet" href="styles.css">
+			  </head>
+
+	  	- css file (styless.css):
+			  h1 {
+			  color: blue;
+			  text-align: center;
+			  }	
+			 
+			  p {
+			  color: red;
+			  }
+
+	
 
 
