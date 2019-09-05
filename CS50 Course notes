@@ -71,6 +71,12 @@ CS50 (yt) COURSE
 
 
 
+1.2 GITHUB PAGES
+
+	- login --> file --> settings
+ --> GitHub Pages --> Source --> master branch
+
+
 
 ---- 2. HTML ----
 
@@ -215,6 +221,7 @@ CS50 (yt) COURSE
 			font-weight: bold;
 		}
 
+
 	- border
 		- div {
 			border: 3px solid blue; (or 5px dotted red;)
@@ -223,9 +230,44 @@ CS50 (yt) COURSE
 		- for tables: 	border-collapse: collapse;
 				padding: 5px;
 				text-align: center;
-				
-				
+	
+
+	- div_span
+		- <head>
+			  <style>
+				#top {
+					font-size: 36px;
+				}
+				#bottom {
+					font-size: 12px;
+				}
+				.name {
+					font-weight: bold;
+				}			
+			  </style>
+		  </head>
+		  <body>
+		  	<div id="top">
+				This is the <span class="name">top</span>of my web page.
+		  	</div>
+			<div id="bottom">
+				This is the <span class="name">bottom</span> of my web page.
+			</div>
+		  </body>
 			
+	
+	- .class
+		
+		in css a dot designs a class: .name
+
+
+		- .name {
+		 	font-weight: bold;
+		} 
+			
+
+
+
 
 	
 		
