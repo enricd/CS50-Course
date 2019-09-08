@@ -99,7 +99,38 @@ CS50 (yt) COURSE
 	will marge the changes made to the branchName to the master branch 
 
 
+- git push --set-upstream origin branchName
 
+	push the new nranch created local to also be present on the remote repo
+
+
+
+1.4 GITHUB REMOTES
+
+- git fetch
+
+	downloads the new version and the state of the master on the remote repo to your local repo
+
+
+- git merge origin/master 
+	
+	updates your local master to the state and commits of the remote master	
+
+
+- git pull
+
+	(git fetch) + (git merge origin/master)
+
+
+
+1.5 GITHUB FORKS
+
+	A separated copy of an entire repo
+
+
+- Pull Request
+	
+	request to merge again your changes of the forked repo to the master one
 
 
 
