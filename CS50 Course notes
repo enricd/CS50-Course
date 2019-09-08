@@ -73,8 +73,34 @@ CS50 (yt) COURSE
 
 1.2 GITHUB PAGES
 
-	- login --> file --> settings
- --> GitHub Pages --> Source --> master branch
+	- login --> file --> settings --> GitHub Pages --> Source --> master branch
+
+
+
+1.3 GITHUB BRANCHING
+
+- git branch
+
+	list of the different branches in the repo
+
+
+- git branch branchName
+
+	creates a new branch named branchName
+
+
+- git checkout branchName
+
+	changes the HEAD from the branch where the repo is pointing to the branch branchName
+
+
+- git merge branchName
+
+	will marge the changes made to the branchName to the master branch 
+
+
+
+
 
 
 
