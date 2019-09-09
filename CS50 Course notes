@@ -251,6 +251,13 @@ CS50 (yt) COURSE
 	- <video>
 
 	- <datalist>
+			- <div>
+				<input name="country" list="countries" placeholder="Country">
+				<datalist id="countries">
+					<option value="Afghanistan">
+					<option value="Albania">
+					<option value="Algeria">
+	  		  </div>
 
 
 
@@ -258,122 +265,212 @@ CS50 (yt) COURSE
 
 ---- 3. CSS ----
 
-- style
+3.1 STYLE
 
-	- properties:
+- properties:
 
-		- color --> there are 140 name colors (like red, blue, darkmagenta...) but also RGB hexcodes (like #093c4f)
+	- color --> there are 140 name colors (like red, blue, darkmagenta...) but also RGB hexcodes (like #093c4f)
 
-		- text-align
+	- text-align
 
-	- <body>
-		<h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
-	  </body>
+- <body>
+	<h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
+  </body>
 
-	- <head>
-		<style>
-			h1 {
-				color: blue;
-				text-align: center;
-			}
-		</style>
-	  </head>
-
-
-	- html and css in separated files:
-		- html file:
-			  <head>
-				<link rel="stylesheet" href="styles.css">
-			  </head>
-
-	  	- css file (styless.css):
-			  h1 {
-			  color: blue;
-			  text-align: center;
-			  }	
-			 
-			  p {
-			  color: red;
-			  }
-
-
-
-	- <div>
-		<head>
-			<title>My Webpage!</title>
-			<style>
-				div {
-
-				}
-			</style>
-		</head>
-		<body>
-			<div>
-				Hello, world!
-			</div>
-			Hello again!
-		</body>
-
-	- size 
-		div {
-			background-color: teal;
-			width: 100px;
-			height: 400px;
-			margin: 30px; 
-			padding: 20px; --> margin for text.
+- <head>
+	<style>
+		h1 {
+			color: blue;
+			text-align: center;
 		}
-
-	- font
-		div {
-			font-family: Arial, sans-serif;
-			font-size: 28px;
-			font-weight: bold;
-		}
+	</style>
+  </head>
 
 
-	- border
-		- div {
-			border: 3px solid blue; (or 5px dotted red;)
+- html and css in separated files:
+	- html file:
+		  <head>
+			<link rel="stylesheet" href="styles.css">
+		  </head>
+
+  	- css file (styless.css):
+		  h1 {
+		  color: blue;
+		  text-align: center;
+		  }	
+		 
+		  p {
+		  color: red;
 		  }
 
-		- for tables: 	border-collapse: collapse;
-				padding: 5px;
-				text-align: center;
-	
 
-	- div_span
-		- <head>
-			  <style>
-				#top {
-					font-size: 36px;
-				}
-				#bottom {
-					font-size: 12px;
-				}
-				.name {
-					font-weight: bold;
-				}			
-			  </style>
-		  </head>
-		  <body>
-		  	<div id="top">
-				This is the <span class="name">top</span>of my web page.
-		  	</div>
-			<div id="bottom">
-				This is the <span class="name">bottom</span> of my web page.
-			</div>
-		  </body>
-			
-	
-	- .class
+
+- <div>
+	<head>
+		<title>My Webpage!</title>
+		<style>
+			div {
+
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			Hello, world!
+		</div>
+		Hello again!
+	</body>
+
+- size 
+	div {
+		background-color: teal;
+		width: 100px;
+		height: 400px;
+		margin: 30px; 
+		padding: 20px; --> margin for text.
+	}
+
+- font
+	div {
+		font-family: Arial, sans-serif;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+
+- border
+	- div {
+		border: 3px solid blue; (or 5px dotted red;)
+	  }
+
+	- for tables: 	border-collapse: collapse;
+			padding: 5px;
+			text-align: center;
+
+
+- div_span
+	- <head>
+		  <style>
+			#top {
+				font-size: 36px;
+			}
+			#bottom {
+				font-size: 12px;
+			}
+			.name {
+				font-weight: bold;
+			}			
+		  </style>
+	  </head>
+	  <body>
+	  	<div id="top">
+			This is the <span class="name">top</span>of my web page.
+	  	</div>
+		<div id="bottom">
+			This is the <span class="name">bottom</span> of my web page.
+		</div>
+	  </body>
 		
-		in css a dot designs a class: .name
+
+- .class
+	
+	in css a dot designs a class: .name
 
 
-		- .name {
-		 	font-weight: bold;
-		} 
-			
+	- .name {
+	 	font-weight: bold;
+	} 
+
+
+- multiple
+
+	- <style>
+		h1, h2 {
+			color: red;
+		}
+	  </style>
+
+	- descendant selector (red to list items from the ordered lists and all its descendants): 
+	  <style>
+		ol li {
+			color: red;
+		}
+	  </style>
+
+	- direct child descendant selector (red to just the inmidiate child of the ordered list items):
+	  <style>
+		ol > li {
+			color: red;
+		}
+	  </style>
+
+
+- type of input style
+	
+	- <style>
+		input[type=text] {
+			background-color: red;
+		}
+		input[type=number] {
+			background-color: yellow;
+		}
+	  </style>
+
+
+- hover over a button change style
+
+	- <style>
+		button {
+			width: 200px;
+			height: 50px;
+			font-size: 24px;
+			background-color: green;
+		}
+		button:hover {
+			background-color: orange;
+		}
+	  </style>
+
+
+- before --> add something before some specific element or type of element
+
+	- <style>
+		a::before {
+			content: "\21d2 Click here: ";
+			font-weight: bold;
+		}
+	  </style>
+
+  	  adds an arrow and Click here before every link (a)
+
+
+- selection --> change style of selected elements
+	
+	- <style>
+		p::selection {
+			color: red;
+			background-color: yellow;
+		}
+	  </style>
+
+
+- CSS selectors
+	
+	a, b 	Multiple Element Selector
+	a b	Descendant Selector
+	a > b	Child Selector
+	a + b	Adjacent Sibling Selector
+	[a=b]	Attribute Selector
+	a:b 	Pseudoclass Selector
+	a::b	Pseudoelement Selector
+
+
+
+
+
+
+
+
 
 
 
