@@ -469,8 +469,35 @@ CS50 (yt) COURSE
 
 3.2 RESPONSIVE DESIGN (viewport, Media Queries, Flexbox, Grids)
 
+- Media Queries 
+	
+	@media  --> creates media queries
+
+	- <meta name="viewport" content="width=device-width, initial-scale=1.0">  --> Adjusts the text and sizes to the size of the device
+	  <style>
+		@media print {
+			.screen-only {
+				display: none;
+			}
+		}
+	  </style>	
+	  <body>
+		<p class="screen-only">This paragraph won't appear when you print this page.</p>
+	  </body>
+	
+	- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <style>
+		@media (min-width: 500px) {
+			body {
+				background-color: red;
+			}
+			h1::before {
+				content: "Welcome!";
+		}
+	  </style>
 
 
+- Flexbox
 
 
 
