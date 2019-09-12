@@ -499,9 +499,96 @@ CS50 (yt) COURSE
 
 - Flexbox
 
+	- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.container > div {
+			background-color: springgreen;
+			font-size: 20px;
+			margin: 20px;
+			width: 200px;
+		}
+	  </style>
+	  <body>
+		<div class="container">
+			<div>A. jlfjdofjd ojfodjfodoj faofdo</div>
+			<div>B. jlfjdofjd ojfodjfodoj faofdo</div>
+			<div>C. jlfjdofjd ojfodjfodoj faofdo</div>
+	  </body>
+
+
+- Grid
+
+	- .grid {
+		background-color: green;
+		display: grid;
+		padding: 20px;
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
+		grid-template-columns: 200px 200px auto;
+	  }
+
+
+- Bootstrap
+
+	Is a css library that you can call it with its link.
+	It distributes the web page into 12 columns.
+	Many functions like alert messages, buttons... 
 
 
 
+3.3 Sass
+
+	A language build above css with .scss extension.
+
+	It needs to be compiled before being displayed onto a browser. It is compiled into a new css file.
+
+
+- compile
+	
+	- Terminal: sass fileName.scss fileName.css 
+
+	It needs to be recompiled every time that scss file is changed.
+
+	- Auto compile with every change on the scss file: 
+	
+		- Terminal: sass --watch fileName.scss:fileName.css
+
+		github can automatically do it also.
+
+
+- variables
+
+	- $color: red;
+	
+	  ul {
+		font-size: 14px;
+	 	color: $color;
+	  }
+
+
+- nesting
+
+
+- inheritance
+	
+	- %message {
+		font-family: sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		border: 1px solid black;
+	  }
+	  .success { 			--> class
+		@extend %message;
+		background-color: green;
+	  }
+	  .warning {			--> class
+		@extend %message;
+		background-color: orange;
+	  }
 
 
 
