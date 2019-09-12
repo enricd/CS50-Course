@@ -593,6 +593,51 @@ CS50 (yt) COURSE
 
 
 
+---- 4. PYTHON ----
+
+- print() - hello.py
+	print("Hello, world!")
+
+- input() - name.py
+	name = input()
+	print(f"hello, {name}!")
+	f = 2.8
+	print(f"f is {f}")
+
+- conditions - conditions.py - [<, >, 
+	if x > 0:
+		print("x is positive")
+	elif x < 0:
+		print("x is negative")
+	else: 
+		print("x is zero")
+
+- sequences - sequences.py
+	name = "Alice"				--> string
+	coordinates = (10.0, 20.0)
+	names = ["Alice", "Bob", "Charlie"] 	--> list
+		names[0] = "Alice"
+
+- for loops - loops0.py
+	for i in range(5):
+		print(i)
+
+	- loops1.py
+	names = ["Alice", "Bob", "Charlie"]
+	for name in names:
+		print(name)
+
+- sets - sets.py - sets contains unique values
+	s = set()
+	s.add(1)
+	s.add(3)
+	s.add(5)
+
+- dictionaries - dictionaries.py
+	ages = {"Alice":22, "Bob":27}
+	ages["Charlie"] = 30
+	ages["Alice"] += 1
+
 
 
 	
