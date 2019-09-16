@@ -738,12 +738,78 @@ CS50 (yt) COURSE
 
 - conditions
 
-	impo
+	- app.py
+		import datetime
+
+		from flask import Flask, render_template
+
+		app = Flask(__name__)
+
+		@app.route("/")
+		def index():
+			now = datetime.datetime.now()
+			new_year = now.month == 1 and now.day == 1
+			return render_template("index.html", new_year=new_year)
+	
+	- index.html
+		<body>
+			{% if new_year %}
+				<h1>Yes! Happy New Year!</h1>
+			{% else %}
+				<h1>NO</h1>
+			{% endif %}
+		</body>
 
 
+- loops
+
+	- application.py
+		def index():
+			names = ["Alice", "Bob", "Charlie"]
+			return render_template("index.html", names=names)
+
+	- index.html
+		<body>
+			<h1>Names</h1>
+			<ul>
+				{% for name in names %}
+					<li>{{ name }}</li>
+				{% endfor %}
+			</ul>
+		</body>
 
 
+- urls
 
+	- application.py
+		@app.route("/")
+		def index():
+			return render_template("index.html")
+
+		@app.route("/more")
+		def more():
+			return render_template("more.html")
+
+	- index.html
+		<body>
+			<h1>First Page</h1>
+			<p>
+				Lorem ipsum
+			</p>
+			<a href="{{ url_for('more') }}">See more...</a>
+		</body>
+	
+	- more.html
+		<body>
+			<h1>Second Page</h1>
+			<p>
+				Donec lobortis
+			</p>
+			<a href="{{ url_for('index') }}">Go back</a>
+		</body>
+
+
+- template inheritance
 
 
 
