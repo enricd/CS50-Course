@@ -638,10 +638,113 @@ CS50 (yt) COURSE
 	ages["Charlie"] = 30
 	ages["Alice"] += 1
 
+- functions
+	def square(x):
+		return x * x
 
+	for i in range(10):
+		print("{} squared is {}".format(i, square(i)))
+
+	if __name__ == "__main__":		--> this will allow to call just the function square(x)
+		main() 
 
 	
-		
+	- import functions
+	from functions import square 		--> functions is a file fucntions.py in the same folder
+	print(square(10))
+
+- classes	--> allows to create new types data
+	class Point:
+		def __init__(self, x, y):
+			self.x = x
+			self.y = y
+
+	p = Point(3,5)
+	print(p.x)
+	print(p.y)
+
+
+
+
+---- 5. HTTP ----
+
+	- HTTP request and HTTP response from us to a server
+
+
+
+
+---- 6. FLASK ----
+
+	Flask makes easy to create web applications
+
+
+- application.py
+
+	from flask import flask
+
+	app = Flask(__name__)
+
+	@app.route("/")
+	def index():
+		return "Hello, world!"
+
+
+- setting up environment --> 
+
+	export FLASK_APP=application.py
+
+
+- flask run
+
+	copy the url to the browser to display the application
+
+
+- routes
+
+	@app.route("/enric")
+	def enric():
+		return "Hello, Enric!"
+
+	@app.route("/<string:name>")		--> dynamic name
+	def hello(name):
+		name.capitalize			--> python function to capytalize
+		return f"<h1>Hello, {name}!</h1>"
+
+
+- templates
+
+	from flask import Flask, render_template
+
+	app = Flask(__name__)
+
+	@app.route("/")
+	def index():
+		return render_template("index.html")	--> html file in a folder called templates
 	
+
+- variables
+
+	- application.py:
+		@app.route("/")
+		def index():
+			headline = "Hello, world!"
+			return render_template("index.html", headline=headlines)
+
+	- index.html:
+		<body>
+			<h1>{{ headline }}</h1>
+		</body>	
+
+
+- conditions
+
+	impo
+
+
+
+
+
+
+
 
 
